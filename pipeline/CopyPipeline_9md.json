@@ -10,17 +10,17 @@
 					"timeout": "7.00:00:00",
 					"retry": 0,
 					"retryIntervalInSeconds": 30,
-					"secureOutput": false,
-					"secureInput": false
+					"secureOutput": true,
+					"secureInput": true
 				},
 				"userProperties": [
 					{
 						"name": "Source",
-						"value": "demo//"
+						"value": "demo//adfnotepad.txt"
 					},
 					{
 						"name": "Destination",
-						"value": "demo//"
+						"value": "demooutput/demo/"
 					}
 				],
 				"typeProperties": {
@@ -30,7 +30,6 @@
 							"type": "AzureBlobStorageReadSettings",
 							"maxConcurrentConnections": 100,
 							"recursive": true,
-							"wildcardFileName": "*",
 							"deleteFilesAfterCompletion": false
 						},
 						"formatSettings": {
@@ -45,9 +44,6 @@
 					},
 					"enableStaging": false,
 					"enableSkipIncompatibleRow": false,
-					"skipErrorFile": {
-						"fileMissing": true
-					},
 					"validateDataConsistency": false
 				},
 				"inputs": [
