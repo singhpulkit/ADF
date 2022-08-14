@@ -1,0 +1,9 @@
+{
+	"name": "ADFPUL",
+	"location": "centralindia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "0ed0119f-fce2-41ad-9123-8a3e6c216388",
+		"tenantId": "83f8e6ea-cb72-4e37-bbf8-aa3d8e8c2190"
+	}
+}
