@@ -1,0 +1,24 @@
+{
+	"name": "Trigger_9md",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Stopped",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "CopyPipeline_9md",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "ScheduleTrigger",
+		"typeProperties": {
+			"recurrence": {
+				"frequency": "Minute",
+				"interval": 2,
+				"startTime": "2022-08-14T15:57:00Z",
+				"timeZone": "UTC"
+			}
+		}
+	}
+}
