@@ -60,6 +60,7 @@
 				"typeProperties": {
 					"location": {
 						"type": "AzureBlobStorageLocation",
+						"folderPath": "demo",
 						"container": "demooutput"
 					}
 				}
@@ -82,6 +83,7 @@
 				"typeProperties": {
 					"location": {
 						"type": "AzureBlobStorageLocation",
+						"fileName": "adfnotepad.txt",
 						"container": "demo"
 					}
 				}
@@ -104,17 +106,17 @@
 							"timeout": "7.00:00:00",
 							"retry": 0,
 							"retryIntervalInSeconds": 30,
-							"secureOutput": false,
-							"secureInput": false
+							"secureOutput": true,
+							"secureInput": true
 						},
 						"userProperties": [
 							{
 								"name": "Source",
-								"value": "demo//"
+								"value": "demo"
 							},
 							{
 								"name": "Destination",
-								"value": "demo//"
+								"value": "demooutput"
 							}
 						],
 						"typeProperties": {
@@ -124,7 +126,6 @@
 									"type": "AzureBlobStorageReadSettings",
 									"maxConcurrentConnections": 100,
 									"recursive": true,
-									"wildcardFileName": "*",
 									"deleteFilesAfterCompletion": false
 								},
 								"formatSettings": {
@@ -139,9 +140,6 @@
 							},
 							"enableStaging": false,
 							"enableSkipIncompatibleRow": false,
-							"skipErrorFile": {
-								"fileMissing": true
-							},
 							"validateDataConsistency": false
 						},
 						"inputs": [
@@ -177,7 +175,7 @@
 			"apiVersion": "2018-06-01",
 			"properties": {
 				"annotations": [],
-				"runtimeState": "Stopped",
+				"runtimeState": "Started",
 				"pipelines": [
 					{
 						"pipelineReference": {
