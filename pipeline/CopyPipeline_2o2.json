@@ -40,7 +40,7 @@
 						"mappings": [
 							{
 								"source": {
-									"name": ""
+									"name": "PersonID"
 								}
 							}
 						]
@@ -54,7 +54,7 @@
 				],
 				"outputs": [
 					{
-						"referenceName": "DestinationDataset_2o2",
+						"referenceName": "DestinationDataset_lda",
 						"type": "DatasetReference"
 					}
 				]
