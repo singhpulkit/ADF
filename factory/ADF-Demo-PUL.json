@@ -1,0 +1,9 @@
+{
+	"name": "ADF-Demo-PUL",
+	"location": "centralindia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "688663bd-29e1-4619-87eb-213b5872cb94",
+		"tenantId": "83f8e6ea-cb72-4e37-bbf8-aa3d8e8c2190"
+	}
+}
