@@ -7,10 +7,10 @@
 		"type": "ScheduleTrigger",
 		"typeProperties": {
 			"recurrence": {
-				"frequency": "Minute",
+				"frequency": "Hour",
 				"interval": 2,
-				"startTime": "2022-08-14T15:57:00Z",
-				"timeZone": "UTC"
+				"startTime": "2022-08-14T15:57:00",
+				"timeZone": "India Standard Time"
 			}
 		}
 	}
