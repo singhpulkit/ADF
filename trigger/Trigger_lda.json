@@ -1,0 +1,24 @@
+{
+	"name": "Trigger_lda",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Stopped",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "CopyPipeline_lda",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "ScheduleTrigger",
+		"typeProperties": {
+			"recurrence": {
+				"frequency": "Hour",
+				"interval": 2,
+				"startTime": "2022-09-06T05:07:00Z",
+				"timeZone": "UTC"
+			}
+		}
+	}
+}
