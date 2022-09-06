@@ -41,6 +41,9 @@
 							{
 								"source": {
 									"name": "PersonID"
+								},
+								"sink": {
+									"name": "PersonID"
 								}
 							}
 						]
